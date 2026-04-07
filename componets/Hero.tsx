@@ -42,7 +42,7 @@ export default function Hero() {
         tl.to(
           [bg1, bg2],
           { opacity: 1, filter: "blur(0px)", duration: 0.6, stagger: 0.08 },
-          0
+          0,
         )
           .fromTo(bg1, { x: -24 }, { x: 0, duration: 0.8 }, 0.05)
           .fromTo(bg2, { x: 24 }, { x: 0, duration: 0.8 }, 0.05)
@@ -70,8 +70,14 @@ export default function Hero() {
           },
         });
 
-        const imgX = gsap.quickTo(img, "x", { duration: 0.5, ease: "power2.out" });
-        const imgY = gsap.quickTo(img, "y", { duration: 0.5, ease: "power2.out" });
+        const imgX = gsap.quickTo(img, "x", {
+          duration: 0.5,
+          ease: "power2.out",
+        });
+        const imgY = gsap.quickTo(img, "y", {
+          duration: 0.5,
+          ease: "power2.out",
+        });
 
         const contentX = gsap.quickTo(content, "x", {
           duration: 0.6,
@@ -91,8 +97,14 @@ export default function Hero() {
           ease: "power2.out",
         });
 
-        const bg1X = gsap.quickTo(bg1, "x", { duration: 0.8, ease: "power2.out" });
-        const bg2X = gsap.quickTo(bg2, "x", { duration: 0.8, ease: "power2.out" });
+        const bg1X = gsap.quickTo(bg1, "x", {
+          duration: 0.8,
+          ease: "power2.out",
+        });
+        const bg2X = gsap.quickTo(bg2, "x", {
+          duration: 0.8,
+          ease: "power2.out",
+        });
 
         const onMove = (e: MouseEvent) => {
           const rect = root.getBoundingClientRect();
@@ -171,7 +183,7 @@ export default function Hero() {
           <div className="absolute inset-0 pointer-events-none">
             <p
               ref={titleBg1Ref}
-             className="absolute left-1/2 -translate-x-1/2 font-primary tracking-widest top-74 sm:top-60 text-5xl uppercase sm:text-9xl font-bold leading-none text-white/30 lg:top-32 lg:text-[200px]"
+              className="absolute left-1/2 -translate-x-1/2 font-primary tracking-widest top-74 sm:top-60 text-5xl uppercase sm:text-9xl font-bold leading-none text-white/30 lg:top-60 lg:text-[120px] 2xl:text-[220px]"
             >
               IntegraMed
             </p>
@@ -179,26 +191,36 @@ export default function Hero() {
 
           <div
             ref={contentRef}
-            className="text-Verdedark w-full z-20 lg:absolute lg:max-w-[600px] lg:bottom-30"
+            className="
+    text-Verdedark w-full z-20 
+    lg:absolute lg:max-w-[800px] lg:text-center
+    lg:top-30 lg:left-1/2 
+    lg:-translate-x-1/2 lg:-translate-y-1/2 
+    
+    2xl:top-auto 2xl:left-auto 
+    2xl:translate-x-0 2xl:translate-y-0 
+    2xl:bottom-30
+    2xl:max-w-[600px]"
           >
-            <h2 className="font-primary font-bold text-3xl text-center lg:text-left lg:text-5xl">
+            <h2 className="font-primary font-bold text-3xl lg:text-center lg:text-5xl">
               Atendimento medico completo, humano e pratico para o dia a dia.
             </h2>
-            <p className="text-Graylight mt-4 text-center lg:text-left">
+
+            <p className="text-Graylight mt-4 text-center lg:text-center">
               A IntegraMed oferece clinica geral, exames laboratoriais,
               acompanhamento continuo e home care para Santa Maria da Serra e
-              regiao, com acolhimento, agilidade e foco no que realmente importa:
-              a sua saude.
+              regiao, com acolhimento, agilidade e foco no que realmente
+              importa: a sua saude.
             </p>
           </div>
 
           {/* IMAGEM COM SOMBRA + FLOAT */}
-          <div className="w-full flex mt-auto justify-center lg:mt-0 lg:justify-end">
+          <div className="w-full flex mt-auto justify-center lg:mt-0 lg:justify-center 2xl:justify-end">
             <img
               ref={imageRef}
               src="/medico.png"
               alt="Equipe medica da Clinica IntegraMed"
-              className="absolute w-[800px] -bottom-10 z-10 max-w-[520px] object-contain lg:max-w-none lg:w-[600px] xl:w-[600px] 2xl:w-[1400px] lg:object-cover 
+              className="absolute w-[800px] -bottom-10 z-10 max-w-[520px] object-contain lg:max-w-none lg:w-[900px]  2xl:w-[1400px] lg:object-cover 
               
               drop-shadow-[0_30px_60px_rgba(0,0,0,0.35)] 
               animate-[float_4s_ease-in-out_infinite]"
@@ -208,7 +230,10 @@ export default function Hero() {
 
           <div
             ref={ratingRef}
-            className="hidden text-Verdedark lg:absolute z-20 relative max-w-[300px] bottom-10 -right-10 lg:block"
+            className="hidden text-Verdedark lg:absolute 
+  bg-white/20 backdrop-blur-md 
+  p-4 rounded-xl z-20 relative max-w-[300px] 
+  bottom-10 right-2 lg:block border border-white/30"
           >
             <div className="flex text-Azulmedio z-20 relative">
               <IoIosStar />
