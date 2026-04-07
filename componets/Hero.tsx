@@ -171,7 +171,7 @@ export default function Hero() {
           <div className="absolute inset-0 pointer-events-none">
             <p
               ref={titleBg1Ref}
-             className="absolute left-1/2 -translate-x-1/2 font-primary tracking-widest top-52 sm:top-60 text-7xl uppercase sm:text-9xl font-bold leading-none text-white/30 lg:top-32 lg:text-[200px]"
+             className="absolute left-1/2 -translate-x-1/2 font-primary tracking-widest top-74 sm:top-60 text-5xl uppercase sm:text-9xl font-bold leading-none text-white/30 lg:top-32 lg:text-[200px]"
             >
               IntegraMed
             </p>
@@ -181,7 +181,7 @@ export default function Hero() {
             ref={contentRef}
             className="text-Verdedark w-full z-20 lg:absolute lg:max-w-[600px] lg:bottom-30"
           >
-            <h2 className="font-primary font-bold text-4xl text-center lg:text-left lg:text-5xl">
+            <h2 className="font-primary font-bold text-3xl text-center lg:text-left lg:text-5xl">
               Atendimento medico completo, humano e pratico para o dia a dia.
             </h2>
             <p className="text-Graylight mt-4 text-center lg:text-left">
