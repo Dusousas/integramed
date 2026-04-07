@@ -157,7 +157,7 @@ export default function Hero() {
 
       <section
         ref={rootRef}
-        className="relative bg-Azullight overflow-hidden h-[calc(100vh-96px)]"
+        className="relative bg-Azullight overflow-hidden h-[80vh] lg:h-[calc(100vh-96px)]"
       >
         <div className="pointer-events-none absolute inset-0 overflow-hidden">
           <div className="absolute -left-20 top-14 h-72 w-72 rounded-full bg-[radial-gradient(circle,rgba(2,153,203,0.3)_0%,rgba(2,153,203,0.18)_26%,rgba(2,153,203,0)_72%)] blur-3xl lg:h-[28rem] lg:w-[28rem]" />
@@ -198,7 +198,7 @@ export default function Hero() {
               ref={imageRef}
               src="/medico.png"
               alt="Equipe medica da Clinica IntegraMed"
-              className="absolute w-full -bottom-10 z-10 max-w-[520px] object-contain lg:max-w-none lg:w-[600px] xl:w-[600px] 2xl:w-[1400px] lg:object-cover 
+              className="absolute w-[800px] -bottom-10 z-10 max-w-[520px] object-contain lg:max-w-none lg:w-[600px] xl:w-[600px] 2xl:w-[1400px] lg:object-cover 
               
               drop-shadow-[0_30px_60px_rgba(0,0,0,0.35)] 
               animate-[float_4s_ease-in-out_infinite]"
