@@ -159,6 +159,14 @@ export default function Hero() {
         ref={rootRef}
         className="relative bg-Azullight overflow-hidden h-[calc(100vh-96px)]"
       >
+        <div className="pointer-events-none absolute inset-0 overflow-hidden">
+          <div className="absolute -left-20 top-14 h-72 w-72 rounded-full bg-[radial-gradient(circle,rgba(2,153,203,0.3)_0%,rgba(2,153,203,0.18)_26%,rgba(2,153,203,0)_72%)] blur-3xl lg:h-[28rem] lg:w-[28rem]" />
+          <div className="absolute left-[34%] top-24 h-44 w-44 rounded-full bg-[radial-gradient(circle,rgba(255,190,32,0.18)_0%,rgba(255,190,32,0)_72%)] blur-3xl lg:h-64 lg:w-64" />
+          <div className="absolute right-[12%] top-20 h-56 w-56 rounded-full bg-[radial-gradient(circle,rgba(255,190,32,0.22)_0%,rgba(255,190,32,0.12)_30%,rgba(255,190,32,0)_72%)] blur-3xl lg:h-80 lg:w-80" />
+          <div className="absolute bottom-28 left-[14%] h-44 w-44 rounded-full bg-[radial-gradient(circle,rgba(102,201,76,0.22)_0%,rgba(102,201,76,0.1)_28%,rgba(102,201,76,0)_72%)] blur-3xl lg:h-64 lg:w-64" />
+          <div className="absolute right-[8%] bottom-10 h-52 w-52 rounded-full bg-[radial-gradient(circle,rgba(239,83,80,0.2)_0%,rgba(239,83,80,0.08)_32%,rgba(239,83,80,0)_72%)] blur-3xl lg:h-72 lg:w-72" />
+        </div>
+
         <div className="maxW relative h-full flex flex-col lg:justify-start lg:items-center lg:flex-row">
           <div className="absolute inset-0 pointer-events-none">
             <p
@@ -185,7 +193,7 @@ export default function Hero() {
           </div>
 
           {/* IMAGEM COM SOMBRA + FLOAT */}
-          <div className="w-full flex mt-auto justify-center lg:mt-0 lg:justify-center">
+          <div className="w-full flex mt-auto justify-center lg:mt-0 lg:justify-end">
             <img
               ref={imageRef}
               src="/medico.png"
