@@ -183,7 +183,7 @@ export default function Hero() {
           <div className="absolute inset-0 pointer-events-none">
             <p
               ref={titleBg1Ref}
-              className="absolute left-1/2 -translate-x-1/2 font-primary tracking-widest top-74 sm:top-60 text-5xl uppercase sm:text-9xl font-bold leading-none text-white/30 lg:top-60 lg:text-[120px] 2xl:text-[220px]"
+              className="absolute left-1/2 -translate-x-1/2 font-primary tracking-widest top-74 sm:top-60 uppercase sm:text-8xl font-bold leading-none text-white/30 lg:top-60 lg:text-[120px] 2xl:text-[220px]"
             >
               IntegraMed
             </p>
@@ -192,21 +192,21 @@ export default function Hero() {
           <div
             ref={contentRef}
             className="
-    text-Verdedark w-full z-20 
-    lg:absolute lg:max-w-[800px] lg:text-center
+    text-Verdedark w-full z-20
+    sm:top-10
+    sm:absolute lg:max-w-[800px] lg:text-center
     lg:top-30 lg:left-1/2 
     lg:-translate-x-1/2 lg:-translate-y-1/2 
-    
     2xl:top-auto 2xl:left-auto 
     2xl:translate-x-0 2xl:translate-y-0 
     2xl:bottom-30
     2xl:max-w-[600px]"
           >
-            <h2 className="font-primary font-bold text-3xl lg:text-center lg:text-5xl">
+            <h2 className="font-primary font-bold text-center text-3xl lg:text-center lg:text-5xl 2xl:text-left">
               Atendimento medico completo, humano e pratico para o dia a dia.
             </h2>
 
-            <p className="text-Graylight mt-4 text-center lg:text-center">
+            <p className="text-Graylight mt-4 text-center lg:text-center 2xl:text-left">
               A IntegraMed oferece clinica geral, exames laboratoriais,
               acompanhamento continuo e home care para Santa Maria da Serra e
               regiao, com acolhimento, agilidade e foco no que realmente
@@ -220,7 +220,7 @@ export default function Hero() {
               ref={imageRef}
               src="/medico.png"
               alt="Equipe medica da Clinica IntegraMed"
-              className="absolute w-[800px] -bottom-10 z-10 max-w-[520px] object-contain lg:max-w-none lg:w-[900px]  2xl:w-[1400px] lg:object-cover 
+              className="absolute w-[800px] -bottom-10 z-10 object-contain  sm:max-w-[820px] lg:max-w-none  lg:w-[900px]  2xl:w-[1400px] lg:object-cover 
               
               drop-shadow-[0_30px_60px_rgba(0,0,0,0.35)] 
               animate-[float_4s_ease-in-out_infinite]"
