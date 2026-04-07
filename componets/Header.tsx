@@ -89,17 +89,17 @@ export default function Header() {
   }, []);
 
   return (
-    <section className="sticky top-0 z-[999] p-6 bg-transparent">
+    <section className="sticky top-0 z-[999] p-2 bg-transparent">
       <header
         ref={headerRef}
-        className="headerBase rounded-lg px-10 py-1 flex items-center justify-between"
+        className="headerBase rounded-lg px-2 lg:px-10 py-2 flex items-center justify-between"
       >
         <div className="lg:w-1/3">
           <a
             className="text-2xl uppercase tracking-wider text-Azulmedio font-bold"
             href="/"
           >
-            <img className="w-[130px]" src="/logo.png" alt="Logo da IntegraMed" />
+            <img className=" w-[90px] lg:w-[130px]" src="/logo.png" alt="Logo da IntegraMed" />
           </a>
         </div>
 
