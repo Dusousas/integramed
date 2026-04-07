@@ -183,7 +183,7 @@ export default function Hero() {
           <div className="absolute inset-0 pointer-events-none">
             <p
               ref={titleBg1Ref}
-              className="absolute left-1/2 -translate-x-1/2 font-primary tracking-widest top-74 sm:top-60 uppercase sm:text-8xl font-bold leading-none text-white/30 lg:top-60 lg:text-[120px] 2xl:text-[220px]"
+              className="absolute left-1/2 -translate-x-1/2 text-5xl font-primary tracking-widest top-80 sm:top-60 uppercase sm:text-8xl font-bold leading-none text-white/30 lg:top-60 lg:text-[120px] 2xl:text-[220px]"
             >
               IntegraMed
             </p>
@@ -192,9 +192,10 @@ export default function Hero() {
           <div
             ref={contentRef}
             className="
-    text-Verdedark w-full z-20
+    text-Verdedark w-full z-20 absolute
+    top-12
     sm:top-10
-    sm:absolute lg:max-w-[800px] lg:text-center
+    lg:max-w-[800px] lg:text-center
     lg:top-30 lg:left-1/2 
     lg:-translate-x-1/2 lg:-translate-y-1/2 
     2xl:top-auto 2xl:left-auto 
@@ -220,8 +221,7 @@ export default function Hero() {
               ref={imageRef}
               src="/medico.png"
               alt="Equipe medica da Clinica IntegraMed"
-              className="absolute w-[800px] -bottom-10 z-10 object-contain  sm:max-w-[820px] lg:max-w-none  lg:w-[900px]  2xl:w-[1400px] lg:object-cover 
-              
+              className="absolute max-w-[700px] -bottom-10 z-10 sm:w-[820px] lg:max-w-none lg:w-[900px] lg:object-cover 2xl:w-[1400px]
               drop-shadow-[0_30px_60px_rgba(0,0,0,0.35)] 
               animate-[float_4s_ease-in-out_infinite]"
               draggable={false}
